@@ -3,4 +3,4 @@
 #
 # brainstormr=/Users/robbyrussell/Projects/development/planetargon/brainstormr
 #
-(tmux ls | grep -vq attached && tmux -2 at) || tmux -2
+#(tmux ls | grep -vq attached && tmux -2 at) || tmux -2
