@@ -159,3 +159,10 @@ filetype plugin indent on     " required!
 " NOTE: comments after Bundle commands are not allowed.
 
 """ END settings for vundle
+
+" YouCompleteMe will show help info in preview window, which is closed automatically.
+" if you prefer the Omni-Completion tip window to close when a selection is
+" made, these lines close it on movement in insert mode or when leaving
+" insert mode
+autocmd CursorMovedI * if pumvisible() == 0|silent! pclose|endif
+autocmd InsertLeave * if pumvisible() == 0|silent! pclose|endif
