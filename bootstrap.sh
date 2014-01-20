@@ -6,6 +6,15 @@ function doIt() {
 		--exclude "README.md" --exclude "LICENSE-MIT.txt" --exclude ".git" --exclude ".gitignore" --exclude ".gitmodules" -av --no-perms . ~
 	source ~/.bash_profile
 }
+
+function deps() {
+  brew install reattach-to-user-namespace
+}
+
+if [ "$1" == "-d" ]; then
+  deps
+fi
+
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
 	doIt
 else
@@ -16,3 +25,4 @@ else
 	fi
 fi
 unset doIt
+unset deps
