@@ -61,3 +61,5 @@ export ANDROID_NDK=/Users/yanvv/android-ndk-r8d
 export ANDROID_HOME=${ANDROID_SDK}
 export PATH=${PATH}:${ANDROID_SDK}/tools:${ANDROID_SDK}/platform-tools
 
+# make brew bins have higher priority
+export PATH="/usr/local/bin:$PATH"
