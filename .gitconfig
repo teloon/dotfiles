@@ -89,3 +89,6 @@
 
 [push]
 	default = matching
+[user]
+	name = teloon
+	email = telooon@gmail.com
