@@ -128,7 +128,7 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 "Bundle 'gmarik/vundle'
 
 " My bundles here:
@@ -166,3 +166,8 @@ filetype plugin indent on     " required!
 " insert mode
 autocmd CursorMovedI * if pumvisible() == 0|silent! pclose|endif
 autocmd InsertLeave * if pumvisible() == 0|silent! pclose|endif
+
+" FuzzyFinder
+nmap <leader>f :FufFileWithCurrentBufferDir<CR>
+nmap <leader>b :FufBuffer<CR>
+nmap <leader>t :FufTaggedFile<CR>
